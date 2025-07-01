@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simon Says Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simon Says</h1>
+    <h2 id="level-title">Press A Key to Start</h2>
+    <div class="scoreboard">
+      <p>High Score: <span id="high-score">0</span></p>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="theme-toggle">🌙 Dark</button>
+    </div>
+
+    <div class="button-container">
+      <div class="btn green" id="green"></div>
+      <div class="btn red" id="red"></div>
+      <div class="btn yellow" id="yellow"></div>
+      <div class="btn blue" id="blue"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
